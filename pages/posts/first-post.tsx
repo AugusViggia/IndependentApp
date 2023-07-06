@@ -2,10 +2,11 @@ import Link from "next/link";
 import Head from "next/head";
 import Script from "next/script";
 import Layout from "../../components/layout";
+import { NextPage } from "next";
 
-export default function FirstPost() {
+const FirstPost: NextPage = () => {
     return (
-        <Layout>
+        <Layout home>
             <Head>
                 <title>First Post</title>  
             </Head>
@@ -23,3 +24,5 @@ export default function FirstPost() {
         </Layout>
     );
 }
+
+export default FirstPost;
