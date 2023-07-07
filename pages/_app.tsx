@@ -1,9 +1,7 @@
-import { NextPage } from "next";
 import "../styles/globals.css"
-import { AppProps } from "next/app";
 
 
-const App: NextPage<AppProps> = ({ Component, pageProps }) => {
+const App = ({ Component, pageProps }) => {
   return <Component {...pageProps} />;
 }
 
