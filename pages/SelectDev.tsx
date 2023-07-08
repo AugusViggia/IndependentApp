@@ -1,11 +1,11 @@
-import Link from "next/link";
+import CardContainer from "../components/CardContainer/CardContainer";
+import NavBar from "../components/NavBar/NavBar";
 
 const SelectDev = () => {
     return (
         <>
-            <h1> Vista SelectDev</h1>
-            <Link href="/">Home</Link>
-            <Link href="/Contacto">Contacto</Link>
+            <NavBar/>
+            <CardContainer/>
         </>
     )
 }

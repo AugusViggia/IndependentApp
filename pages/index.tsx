@@ -1,6 +1,8 @@
 import Head from 'next/head';
 import { NextPage } from 'next';
+import NavBar from "../components/NavBar/NavBar";
 import Link from 'next/link';
+import style from "../styles/Home.module.css"
 
 const Home: NextPage = () => {
   return (
@@ -8,14 +10,12 @@ const Home: NextPage = () => {
       <Head>
         <title>IndependenT</title>
       </Head>
-      <section>
-        <p>Oficina virtual de profesionales IT</p>
-      </section>
-      <Link href="/SelectDev">Select Dev</Link>
-      <Link href="/Equipo">Equipo</Link>
-      <Link href="/PortfolioTeam">Proyectos</Link>
-    </>
+      <NavBar/>
+      <div className={style.button}>
+        <Link href="/SelectDev"><button>Cotizar proyecto</button></Link>  
+      </div>
       
+    </>
   );
 }
 
